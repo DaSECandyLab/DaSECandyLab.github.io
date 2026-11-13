@@ -1,0 +1,7 @@
+/* Original organization artwork, enlarged optically without shifting the header. */
+.brand .brand-logo{display:block;width:42px;height:42px;flex-shrink:0;line-height:0}
+.brand .brand-logo svg{display:block;width:100%;height:100%;overflow:visible;transform:scale(1.3)}
+.brand-logo .candy-swirl{transform-box:view-box;transform-origin:326px 194px}
+.brand-logo.is-playing .candy-swirl{animation:brand-candy-turn 1.8s cubic-bezier(.22,.7,.24,1) both}
+@keyframes brand-candy-turn{0%,10%,100%{transform:rotate(0)}43%{transform:rotate(8deg)}}
+@media(prefers-reduced-motion:reduce){.brand-logo.is-playing .candy-swirl{animation:none!important}}
