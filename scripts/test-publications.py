@@ -55,6 +55,33 @@ class PublicationsTest(unittest.TestCase):
         self.assertTrue(all(any(mid != 'chengcheng-yang' for mid in p['memberIds']) for p in self.papers))
         self.assertTrue(all(not m.get('publicationSources') for m in self.members if m['role'] == 'advisor'))
 
+    def test_homepage_only_records_do_not_reappear_during_sync(self):
+        unsupported = copy.deepcopy(self.paper)
+        unsupported.update(id='homepage-announcement', title='Homepage-only announcement',
+                           status='accepted', url='https://example.org/#publications', alternateUrls=[])
+        unsupported.pop('doi')
+        self.assertFalse(sync.builder.has_publication_record(unsupported))
+        self.assertTrue(sync.builder.has_publication_record(self.paper))
+        arxiv = dict(unsupported, url='https://arxiv.org/abs/2607.27056', status='preprint')
+        self.assertTrue(sync.builder.has_publication_record(arxiv))
+        for url in ['https://arxiv.org/', 'https://arxiv.org.evil.example/abs/2607.27056']:
+            self.assertFalse(sync.builder.has_publication_record(dict(arxiv, url=url)))
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / 'data').mkdir()
+            (root / 'data/members.json').write_text(json.dumps(self.members))
+            (root / 'data/publications.json').write_text(json.dumps(self.papers + [unsupported]))
+            args = argparse.Namespace(cache=root / 'cache', offline=False,
+                                      publish=root / 'public/data.js', allow_source_errors=True)
+            with patch.object(sync, 'ROOT', root), patch.object(sync.Fetcher, 'get', side_effect=OSError('outage')):
+                sync.run(args)
+            output = json.loads(args.publish.read_text()[len('const LAB = '):].rstrip(';\n'))
+            self.assertNotIn(unsupported['id'], [p['id'] for p in output['papers']])
+            self.assertIn('setoka', [p['id'] for p in output['papers']])
+            report = json.loads((root / 'data/publication-sync-report.json').read_text())
+            self.assertEqual(report['excludedWithoutPublicationRecord'], [unsupported['id']])
+            self.assertNotIn(unsupported['id'], report['excludedByEnrollment'])
+
     def test_source_outages_preserve_existing_papers_and_live_data(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)

@@ -188,7 +188,8 @@ def run(args):
     records = associate_papers(original, members)
     report = {'checkedAt': datetime.now(timezone.utc).isoformat(), 'issues': [], 'unmatchedTitles': [],
               'sourcesChecked': [], 'unboundMembers': [],
-              'before': len(publications_since_enrollment(builder.deduplicate(records), members)),
+              'before': len(publications_since_enrollment(
+                  [p for p in builder.deduplicate(records) if builder.has_publication_record(p)], members)),
               'memberRegistry': (str(members_repo) + '#FETCH_HEAD:data/members.json'
                                  if members_repo else members_url or 'data/members.json')}
     known_dois = {p.get('doi'): p for p in records if p.get('doi')}
@@ -280,10 +281,12 @@ def run(args):
         if old:
             paper['id'] = old['id']
     validate(records, members)
-    papers = publications_since_enrollment(records, members)
+    supported = [p for p in records if builder.has_publication_record(p)]
+    report['excludedWithoutPublicationRecord'] = [p['id'] for p in records if not builder.has_publication_record(p)]
+    papers = publications_since_enrollment(supported, members)
     validate(papers, members)
     visible_ids = {p['id'] for p in papers}
-    report['excludedByEnrollment'] = [p['id'] for p in records if p['id'] not in visible_ids]
+    report['excludedByEnrollment'] = [p['id'] for p in supported if p['id'] not in visible_ids]
     report['after'] = len(papers)
     report['added'] = [p['title'] for p in papers if not any(
         builder.title_key(p['title']) == builder.title_key(old['title']) for old in original)]

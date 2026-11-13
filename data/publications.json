@@ -1,43 +1,5 @@
 [
   {
-    "id": "metis",
-    "label": "Metis",
-    "title": "Metis: Workload-Aware Multi-Dimensional Histograms for Cardinality Estimation",
-    "authors": [
-      "Xuhua Huang",
-      "Xinyu Xiang",
-      "Zirui Hu",
-      "Zhicheng Pan",
-      "Siyang Weng",
-      "Rong Zhang",
-      "Chengcheng Yang",
-      "Xuan Zhou",
-      "Quanqing Xu",
-      "Chuanhui Yang"
-    ],
-    "year": 2027,
-    "venue": "PVLDB",
-    "status": "accepted",
-    "url": "https://lroethan.github.io/#selected-publications",
-    "memberIds": [
-      "chengcheng-yang",
-      "zhicheng-pan"
-    ],
-    "sources": [
-      "https://lroethan.github.io/",
-      "https://ychengc.github.io/",
-      "https://dbhammer.github.io/research/"
-    ],
-    "checkedAt": "2026-11-07",
-    "topics": [
-      "Query optimization"
-    ],
-    "topicKeys": [
-      "optimizer"
-    ],
-    "shortTitle": "Metis: Workload-Aware Multi-Dimensional Histograms for Cardinality Estimation"
-  },
-  {
     "id": "apex",
     "label": "APEX",
     "title": "APEX: Adaptive Variable-Wise Parallel Execution for Worst-Case Optimal Joins on Graph Queries",

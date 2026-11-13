@@ -4,9 +4,25 @@ import json
 import re
 import unicodedata
 from pathlib import Path
+from urllib.parse import urlsplit
 from member_registry import load_members, member_is_author, publications_since_enrollment
 
 ROOT = Path(__file__).resolve().parents[1]
+
+
+def has_publication_record(paper):
+    """Require a paper-level reference in addition to verified author identity.
+
+    DOI metadata is verified during collection; arXiv records are reviewed when
+    added. A homepage/list citation alone cannot make a paper publishable.
+    """
+    doi = paper.get('doi')
+    if isinstance(doi, str) and re.fullmatch(r'10\.\d{4,9}/\S+', doi):
+        return True
+    url = urlsplit(paper.get('url', ''))
+    return (url.scheme == 'https' and url.hostname == 'arxiv.org' and
+            not url.username and not url.password and
+            bool(re.fullmatch(r'/(?:abs|pdf)/\d{4}\.\d{4,5}(?:v\d+)?(?:\.pdf)?', url.path)))
 
 
 def title_key(title):
@@ -52,7 +68,8 @@ def deduplicate(records):
 def main():
     members = load_members(ROOT / 'data/members.json')
     records = json.loads((ROOT / 'data/publications.json').read_text())
-    papers = publications_since_enrollment(deduplicate(records), members)
+    supported = [p for p in deduplicate(records) if has_publication_record(p)]
+    papers = publications_since_enrollment(supported, members)
     member_names = {m['id']: m for m in members}
     assert len(member_names) == len(members), 'Duplicate member IDs'
     assert len({p['id'] for p in papers}) == len(papers), 'Duplicate paper IDs'
