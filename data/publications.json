@@ -1,0 +1,931 @@
+[
+  {
+    "id": "metis",
+    "label": "Metis",
+    "title": "Metis: Workload-Aware Multi-Dimensional Histograms for Cardinality Estimation",
+    "authors": [
+      "Xuhua Huang",
+      "Xinyu Xiang",
+      "Zirui Hu",
+      "Zhicheng Pan",
+      "Siyang Weng",
+      "Rong Zhang",
+      "Chengcheng Yang",
+      "Xuan Zhou",
+      "Quanqing Xu",
+      "Chuanhui Yang"
+    ],
+    "year": 2027,
+    "venue": "PVLDB",
+    "status": "accepted",
+    "url": "https://lroethan.github.io/#selected-publications",
+    "memberIds": [
+      "chengcheng-yang",
+      "zhicheng-pan"
+    ],
+    "sources": [
+      "https://lroethan.github.io/",
+      "https://ychengc.github.io/",
+      "https://dbhammer.github.io/research/"
+    ],
+    "checkedAt": "2026-11-07",
+    "topics": [
+      "Query optimization"
+    ],
+    "topicKeys": [
+      "optimizer"
+    ],
+    "shortTitle": "Metis: Workload-Aware Multi-Dimensional Histograms for Cardinality Estimation"
+  },
+  {
+    "id": "apex",
+    "label": "APEX",
+    "title": "APEX: Adaptive Variable-Wise Parallel Execution for Worst-Case Optimal Joins on Graph Queries",
+    "authors": [
+      "Yipeng Liu",
+      "Yuming Lin",
+      "Zhicheng Pan",
+      "Chengcheng Yang",
+      "You Li",
+      "Aoying Zhou"
+    ],
+    "year": 2026,
+    "venue": "ICDE",
+    "status": "published",
+    "doi": "10.1109/icde65706.2026.00206",
+    "url": "https://doi.org/10.1109/icde65706.2026.00206",
+    "memberIds": [
+      "chengcheng-yang",
+      "zhicheng-pan"
+    ],
+    "sources": [
+      "https://lroethan.github.io/",
+      "https://ychengc.github.io/",
+      "https://api.crossref.org/works/10.1109/icde65706.2026.00206",
+      "https://pub.orcid.org/v3.0/0000-0002-3572-1735/works"
+    ],
+    "checkedAt": "2026-11-07",
+    "topics": [
+      "Query optimization"
+    ],
+    "topicKeys": [
+      "optimizer"
+    ],
+    "shortTitle": "APEX: Adaptive Variable-Wise Parallel Execution for Worst-Case Optimal Joins on Graph Queries"
+  },
+  {
+    "id": "bond",
+    "label": "BOND",
+    "title": "BOND: A Co-Designed Framework for LLM-Powered Analytics Over Relational Data",
+    "authors": [
+      "Lixiang Chen",
+      "Qin Zheng",
+      "Zhicheng Pan",
+      "Chengcheng Yang",
+      "Rong Zhang",
+      "Xuan Zhou"
+    ],
+    "year": 2026,
+    "venue": "ICDE",
+    "status": "published",
+    "doi": "10.1109/icde65706.2026.00145",
+    "url": "https://doi.org/10.1109/icde65706.2026.00145",
+    "memberIds": [
+      "chengcheng-yang",
+      "lixiang-chen",
+      "zhicheng-pan"
+    ],
+    "sources": [
+      "https://lroethan.github.io/",
+      "https://ychengc.github.io/",
+      "https://api.crossref.org/works/10.1109/icde65706.2026.00145",
+      "https://pub.orcid.org/v3.0/0000-0002-3572-1735/works"
+    ],
+    "checkedAt": "2026-11-07",
+    "topics": [
+      "LLM",
+      "DB4AI",
+      "Relational analytics"
+    ],
+    "topicKeys": [],
+    "shortTitle": "BOND: A Co-Designed Framework for LLM-Powered Analytics Over Relational Data"
+  },
+  {
+    "id": "paper-f6356d6b637e",
+    "label": "ByteHouse",
+    "title": "ByteHouse: ByteDance's Cloud-Native Data Warehouse for Real-Time Multimodal Data Analytics",
+    "shortTitle": "ByteHouse: ByteDance's Cloud-Native Data Warehouse for Real-Time Multimodal Data Analytics",
+    "authors": [
+      "Yuxing Han",
+      "Yu Lin",
+      "Yifeng Dong",
+      "Xuanhe Zhou",
+      "Xindong Peng",
+      "Xinhui Tian",
+      "Zhiyuan You",
+      "Yingzhong Guo",
+      "Xi Chen",
+      "Weiping Qu",
+      "Tao Meng",
+      "Dayue Gao",
+      "Haoyu Wang",
+      "Liuxi Wei",
+      "Huanchen Zhang",
+      "Fan Wu"
+    ],
+    "year": 2026,
+    "venue": "SIGMOD Companion",
+    "status": "published",
+    "doi": "10.1145/3788853.3803080",
+    "url": "https://doi.org/10.1145/3788853.3803080",
+    "memberIds": [
+      "haoyu-wang"
+    ],
+    "sources": [
+      "https://api.crossref.org/works?filter=orcid%3A0009-0006-9407-8651&rows=1000",
+      "https://api.crossref.org/works/10.1145/3788853.3803080"
+    ],
+    "checkedAt": "2026-11-07",
+    "topics": [
+      "Data warehouse",
+      "Multimodal analytics"
+    ],
+    "topicKeys": []
+  },
+  {
+    "id": "obelisk",
+    "label": "OBELISK",
+    "title": "OBELISK: Efficient Offline Query Planning with Bayesian Optimization-Informed Language Model Reasoning",
+    "authors": [
+      "Zhicheng Pan",
+      "Wenwen Sun",
+      "Yuanjia Zhang",
+      "Terence Purcell",
+      "Yu Dong",
+      "Chengcheng Yang",
+      "Rong Zhang",
+      "Xuan Zhou",
+      "Jianliang Xu"
+    ],
+    "year": 2026,
+    "venue": "PVLDB",
+    "status": "published",
+    "doi": "10.14778/3801059.3801077",
+    "url": "https://doi.org/10.14778/3801059.3801077",
+    "memberIds": [
+      "chengcheng-yang",
+      "wenwen-sun",
+      "zhicheng-pan"
+    ],
+    "sources": [
+      "https://lroethan.github.io/",
+      "https://ychengc.github.io/",
+      "https://api.crossref.org/works/10.14778/3801059.3801077",
+      "https://pub.orcid.org/v3.0/0000-0002-3572-1735/works"
+    ],
+    "checkedAt": "2026-11-07",
+    "topics": [
+      "Query optimization",
+      "LLM"
+    ],
+    "topicKeys": [
+      "optimizer"
+    ],
+    "shortTitle": "OBELISK: Efficient Offline Query Planning with Bayesian Optimization-Informed Language Model Reasoning"
+  },
+  {
+    "id": "pisco",
+    "label": "Pisco",
+    "title": "Pisco: An Isolation Bug Case Reduction and Deduplication Framework",
+    "authors": [
+      "Siyang Weng",
+      "Hongyu Yang",
+      "Zirui Hu",
+      "Rong Zhang",
+      "Zhicheng Pan",
+      "Chengcheng Yang",
+      "Xuan Zhou",
+      "Yuxing Chen",
+      "Xiaolong He",
+      "Anqun Pan"
+    ],
+    "year": 2026,
+    "venue": "PVLDB",
+    "status": "published",
+    "doi": "10.14778/3797919.3797944",
+    "url": "https://doi.org/10.14778/3797919.3797944",
+    "memberIds": [
+      "chengcheng-yang",
+      "zhicheng-pan"
+    ],
+    "sources": [
+      "https://lroethan.github.io/",
+      "https://ychengc.github.io/",
+      "https://api.crossref.org/works/10.14778/3797919.3797944",
+      "https://pub.orcid.org/v3.0/0000-0002-3572-1735/works"
+    ],
+    "checkedAt": "2026-11-07",
+    "topics": [
+      "Database testing"
+    ],
+    "topicKeys": [],
+    "shortTitle": "Pisco: An Isolation Bug Case Reduction and Deduplication Framework"
+  },
+  {
+    "id": "q-doctor",
+    "label": "Q-Doctor",
+    "title": "Q-Doctor: Retrieval-Augmented Diagnosis and Multi-agent Correction for Query Performance Anomalies",
+    "authors": [
+      "Yiwen Han",
+      "Zhicheng Pan",
+      "Lixiang Chen",
+      "Chengcheng Yang",
+      "Rong Zhang",
+      "Xuan Zhou"
+    ],
+    "year": 2026,
+    "venue": "DASFAA",
+    "status": "published",
+    "doi": "10.1007/978-981-92-0366-6_32",
+    "url": "https://doi.org/10.1007/978-981-92-0366-6_32",
+    "memberIds": [
+      "chengcheng-yang",
+      "lixiang-chen",
+      "zhicheng-pan"
+    ],
+    "sources": [
+      "https://lroethan.github.io/",
+      "https://ychengc.github.io/",
+      "https://api.crossref.org/works/10.1007/978-981-92-0366-6_32",
+      "https://pub.orcid.org/v3.0/0000-0002-3572-1735/works"
+    ],
+    "checkedAt": "2026-11-07",
+    "topics": [
+      "Operations",
+      "LLM"
+    ],
+    "topicKeys": [
+      "operations"
+    ],
+    "shortTitle": "Q-Doctor: Retrieval-Augmented Diagnosis and Multi-agent Correction for Query Performance Anomalies"
+  },
+  {
+    "id": "seed",
+    "label": "SeeD",
+    "title": "SeeD: Online similarity-preserving pattern discovery for streaming trajectories",
+    "authors": [
+      "Junhua Fang",
+      "Jiayi Li",
+      "Chunhui Feng",
+      "Zhicheng Pan",
+      "Pingfu Chao",
+      "Jiajie Xu",
+      "Pengpeng Zhao"
+    ],
+    "year": 2026,
+    "venue": "Pattern Recognition",
+    "status": "published",
+    "doi": "10.1016/j.patcog.2025.112446",
+    "url": "https://doi.org/10.1016/j.patcog.2025.112446",
+    "memberIds": [
+      "zhicheng-pan"
+    ],
+    "sources": [
+      "https://lroethan.github.io/",
+      "https://api.crossref.org/works/10.1016/j.patcog.2025.112446",
+      "https://pub.orcid.org/v3.0/0000-0002-3572-1735/works",
+      "https://api.crossref.org/works?filter=orcid%3A0000-0002-3572-1735&rows=1000"
+    ],
+    "checkedAt": "2026-11-07",
+    "topics": [
+      "Similarity search"
+    ],
+    "topicKeys": [
+      "vector"
+    ],
+    "shortTitle": "SeeD: Online similarity-preserving pattern discovery for streaming trajectories",
+    "alternateUrls": [
+      "https://doi.org/10.2139/ssrn.5297587"
+    ]
+  },
+  {
+    "id": "setoka",
+    "label": "Setoka",
+    "title": "Setoka: A Benchmark for Hierarchical User Understanding in Personalized Agents over Heterogeneous Data",
+    "authors": [
+      "Lingyang Zeng",
+      "Guangze Chen",
+      "Kaichen Yu",
+      "Zhicheng Pan",
+      "Siyang Weng",
+      "Zirui Hu",
+      "Xiangyun Du",
+      "Hailin He",
+      "Rong Zhang",
+      "Chengcheng Yang",
+      "Kai Huang",
+      "Xuan Zhou"
+    ],
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "url": "https://arxiv.org/abs/2607.27056",
+    "memberIds": [
+      "chengcheng-yang",
+      "zhicheng-pan"
+    ],
+    "sources": [
+      "https://lroethan.github.io/",
+      "https://arxiv.org/abs/2607.27056"
+    ],
+    "checkedAt": "2026-11-07",
+    "topics": [
+      "Benchmarking",
+      "LLM"
+    ],
+    "topicKeys": [],
+    "shortTitle": "Setoka: A Benchmark for Hierarchical User Understanding in Personalized Agents over Heterogeneous Data"
+  },
+  {
+    "id": "aqetuner",
+    "label": "AQETuner",
+    "title": "AQETuner: Reliable Query-Level Configuration Tuning for Analytical Query Engines",
+    "authors": [
+      "Lixiang Chen",
+      "Yuxing Han",
+      "Yu Chen",
+      "Xing Chen",
+      "Chengcheng Yang",
+      "Weining Qian"
+    ],
+    "year": 2025,
+    "venue": "PVLDB",
+    "status": "published",
+    "doi": "10.14778/3742728.3742759",
+    "url": "https://doi.org/10.14778/3742728.3742759",
+    "memberIds": [
+      "chengcheng-yang",
+      "lixiang-chen",
+      "yu-chen"
+    ],
+    "sources": [
+      "https://ychengc.github.io/",
+      "https://api.crossref.org/works/10.14778/3742728.3742759",
+      "https://pub.orcid.org/v3.0/0009-0006-3448-3831/works"
+    ],
+    "checkedAt": "2026-11-07",
+    "topics": [
+      "Operations"
+    ],
+    "topicKeys": [
+      "operations"
+    ],
+    "shortTitle": "AQETuner: Reliable Query-Level Configuration Tuning for Analytical Query Engines",
+    "alternateUrls": [
+      "https://arxiv.org/abs/2504.11756"
+    ]
+  },
+  {
+    "id": "easytime",
+    "label": "EasyTime",
+    "title": "EasyTime: Time Series Forecasting Made Easy",
+    "authors": [
+      "Xiangfei Qiu",
+      "Xiuwen Li",
+      "Ruiyang Pang",
+      "Zhicheng Pan",
+      "Xingjian Wu",
+      "Liu Yang",
+      "Jilin Hu",
+      "Yang Shu",
+      "Xuesong Lu",
+      "Chengcheng Yang",
+      "Chenjuan Guo",
+      "Aoying Zhou",
+      "Christian S. Jensen",
+      "Bin Yang"
+    ],
+    "year": 2025,
+    "venue": "ICDE",
+    "status": "published",
+    "doi": "10.1109/icde65448.2025.00353",
+    "url": "https://doi.org/10.1109/icde65448.2025.00353",
+    "memberIds": [
+      "chengcheng-yang",
+      "zhicheng-pan"
+    ],
+    "sources": [
+      "https://lroethan.github.io/",
+      "https://ychengc.github.io/",
+      "https://api.crossref.org/works/10.1109/icde65448.2025.00353",
+      "https://pub.orcid.org/v3.0/0000-0002-3572-1735/works"
+    ],
+    "checkedAt": "2026-11-07",
+    "topics": [
+      "Operations"
+    ],
+    "topicKeys": [
+      "operations"
+    ],
+    "shortTitle": "EasyTime: Time Series Forecasting Made Easy",
+    "alternateUrls": [
+      "https://arxiv.org/abs/2412.17603"
+    ]
+  },
+  {
+    "id": "hyper",
+    "label": "Hyper",
+    "title": "Hyper: Hybrid Physical Design Advisor with Multi-agent Reinforcement Learning",
+    "authors": [
+      "Zhicheng Pan",
+      "Yuanjia Zhang",
+      "Chengcheng Yang",
+      "Ahmad Ghazal",
+      "Rong Zhang",
+      "Huiqi Hu",
+      "Xiaoju Wu",
+      "Yu Dong",
+      "Xuan Zhou"
+    ],
+    "year": 2025,
+    "venue": "ICDE",
+    "status": "published",
+    "doi": "10.1109/icde65448.2025.00121",
+    "url": "https://doi.org/10.1109/icde65448.2025.00121",
+    "memberIds": [
+      "chengcheng-yang",
+      "zhicheng-pan"
+    ],
+    "sources": [
+      "https://lroethan.github.io/",
+      "https://ychengc.github.io/",
+      "https://api.crossref.org/works/10.1109/icde65448.2025.00121",
+      "https://dbhammer.github.io/research/",
+      "https://pub.orcid.org/v3.0/0000-0002-3572-1735/works"
+    ],
+    "checkedAt": "2026-11-07",
+    "topics": [
+      "Query optimization",
+      "Reinforcement learning"
+    ],
+    "topicKeys": [
+      "optimizer"
+    ],
+    "shortTitle": "Hyper: Hybrid Physical Design Advisor with Multi-agent Reinforcement Learning"
+  },
+  {
+    "id": "adaptive-parallelism",
+    "label": "Adaptive parallelism",
+    "title": "Learning from the Past: Adaptive Parallelism Tuning for Stream Processing Systems",
+    "authors": [
+      "Yuxing Han",
+      "Lixiang Chen",
+      "Haoyu Wang",
+      "Zhanghao Chen",
+      "Yifan Zhang",
+      "Chengcheng Yang",
+      "Kongzhang Hao",
+      "Zhengyi Yang"
+    ],
+    "year": 2025,
+    "venue": "ICDE",
+    "status": "published",
+    "doi": "10.1109/icde65448.2025.00264",
+    "url": "https://doi.org/10.1109/icde65448.2025.00264",
+    "memberIds": [
+      "chengcheng-yang",
+      "haoyu-wang",
+      "lixiang-chen"
+    ],
+    "sources": [
+      "https://ychengc.github.io/",
+      "https://api.crossref.org/works/10.1109/icde65448.2025.00264",
+      "https://pub.orcid.org/v3.0/0009-0006-3448-3831/works"
+    ],
+    "checkedAt": "2026-11-07",
+    "topics": [
+      "Operations"
+    ],
+    "topicKeys": [
+      "operations"
+    ],
+    "shortTitle": "Learning from the Past: Adaptive Parallelism Tuning for Stream Processing Systems",
+    "alternateUrls": [
+      "https://arxiv.org/abs/2504.12074"
+    ]
+  },
+  {
+    "id": "rabbit",
+    "label": "Rabbit",
+    "title": "Rabbit: Retrieval-Augmented Generation Enables Better Automatic Database Knob Tuning",
+    "authors": [
+      "Wenwen Sun",
+      "Zhicheng Pan",
+      "Zirui Hu",
+      "Yu Liu",
+      "Chengcheng Yang",
+      "Rong Zhang",
+      "Xuan Zhou"
+    ],
+    "year": 2025,
+    "venue": "ICDE",
+    "status": "published",
+    "doi": "10.1109/icde65448.2025.00284",
+    "url": "https://doi.org/10.1109/icde65448.2025.00284",
+    "memberIds": [
+      "chengcheng-yang",
+      "wenwen-sun",
+      "zhicheng-pan"
+    ],
+    "sources": [
+      "https://lroethan.github.io/",
+      "https://ychengc.github.io/",
+      "https://api.crossref.org/works/10.1109/icde65448.2025.00284",
+      "https://pub.orcid.org/v3.0/0000-0002-3572-1735/works"
+    ],
+    "checkedAt": "2026-11-07",
+    "topics": [
+      "Operations",
+      "LLM"
+    ],
+    "topicKeys": [
+      "operations"
+    ],
+    "shortTitle": "Rabbit: Retrieval-Augmented Generation Enables Better Automatic Database Knob Tuning"
+  },
+  {
+    "id": "vodka",
+    "label": "Vodka",
+    "title": "Vodka: Rethink Benchmarking Philosophy in HTAP Systems",
+    "authors": [
+      "Zirui Hu",
+      "Siyang Weng",
+      "Zhicheng Pan",
+      "Rong Zhang",
+      "Chengcheng Yang",
+      "Peng Cai",
+      "Xuan Zhou",
+      "Quanqing Xu",
+      "Chuanhui Yang"
+    ],
+    "year": 2025,
+    "venue": "PVLDB",
+    "status": "published",
+    "doi": "10.14778/3778092.3778107",
+    "url": "https://doi.org/10.14778/3778092.3778107",
+    "memberIds": [
+      "chengcheng-yang",
+      "zhicheng-pan"
+    ],
+    "sources": [
+      "https://lroethan.github.io/",
+      "https://ychengc.github.io/",
+      "https://api.crossref.org/works/10.14778/3778092.3778107",
+      "https://pub.orcid.org/v3.0/0000-0002-3572-1735/works"
+    ],
+    "checkedAt": "2026-11-07",
+    "topics": [
+      "Benchmarking"
+    ],
+    "topicKeys": [],
+    "shortTitle": "Vodka: Rethink Benchmarking Philosophy in HTAP Systems"
+  },
+  {
+    "id": "bytecard",
+    "label": "ByteCard",
+    "title": "ByteCard: Enhancing ByteDance's Data Warehouse with Learned Cardinality Estimation",
+    "authors": [
+      "Yuxing Han",
+      "Haoyu Wang",
+      "Lixiang Chen",
+      "Yifeng Dong",
+      "Xing Chen",
+      "Benquan Yu",
+      "Chengcheng Yang",
+      "Weining Qian"
+    ],
+    "year": 2024,
+    "venue": "SIGMOD Companion",
+    "status": "published",
+    "doi": "10.1145/3626246.3653376",
+    "url": "https://doi.org/10.1145/3626246.3653376",
+    "memberIds": [
+      "chengcheng-yang",
+      "haoyu-wang",
+      "lixiang-chen"
+    ],
+    "sources": [
+      "https://ychengc.github.io/",
+      "https://api.crossref.org/works/10.1145/3626246.3653376",
+      "https://pub.orcid.org/v3.0/0009-0006-9407-8651/works",
+      "https://api.crossref.org/works?filter=orcid%3A0009-0006-9407-8651&rows=1000",
+      "https://pub.orcid.org/v3.0/0009-0006-3448-3831/works",
+      "https://api.crossref.org/works?filter=orcid%3A0009-0006-3448-3831&rows=1000"
+    ],
+    "checkedAt": "2026-11-07",
+    "topics": [
+      "Query optimization"
+    ],
+    "topicKeys": [
+      "optimizer"
+    ],
+    "shortTitle": "ByteCard: Enhancing ByteDance's Data Warehouse with Learned Cardinality Estimation",
+    "alternateUrls": [
+      "https://arxiv.org/abs/2403.16110"
+    ]
+  },
+  {
+    "id": "hps",
+    "label": "HPS",
+    "title": "HPS: A novel heuristic hierarchical pruning strategy for dynamic top-k trajectory similarity query",
+    "authors": [
+      "Tianyi Gu",
+      "Junhua Fang",
+      "Zhicheng Pan",
+      "Yang Wu",
+      "Yi Ban",
+      "Pingfu Chao",
+      "Lei Zhao"
+    ],
+    "year": 2024,
+    "venue": "Information Processing & Management",
+    "status": "published",
+    "doi": "10.1016/j.ipm.2024.103828",
+    "url": "https://doi.org/10.1016/j.ipm.2024.103828",
+    "memberIds": [
+      "zhicheng-pan"
+    ],
+    "sources": [
+      "https://lroethan.github.io/",
+      "https://api.crossref.org/works/10.1016/j.ipm.2024.103828",
+      "https://pub.orcid.org/v3.0/0000-0002-3572-1735/works"
+    ],
+    "checkedAt": "2026-11-07",
+    "topics": [
+      "Similarity search"
+    ],
+    "topicKeys": [
+      "vector"
+    ],
+    "shortTitle": "HPS: A novel heuristic hierarchical pruning strategy for dynamic top-k trajectory similarity query"
+  },
+  {
+    "id": "latuner",
+    "label": "LATuner",
+    "title": "LATuner: An LLM-Enhanced Database Tuning System Based on Adaptive Surrogate Model",
+    "authors": [
+      "Chongjiong Fan",
+      "Zhicheng Pan",
+      "Wenwen Sun",
+      "Chengcheng Yang",
+      "Wei-Neng Chen"
+    ],
+    "year": 2024,
+    "venue": "ECML PKDD",
+    "status": "published",
+    "doi": "10.1007/978-3-031-70362-1_22",
+    "url": "https://doi.org/10.1007/978-3-031-70362-1_22",
+    "memberIds": [
+      "chengcheng-yang",
+      "wenwen-sun",
+      "zhicheng-pan"
+    ],
+    "sources": [
+      "https://lroethan.github.io/",
+      "https://ychengc.github.io/",
+      "https://api.crossref.org/works/10.1007/978-3-031-70362-1_22",
+      "https://pub.orcid.org/v3.0/0000-0002-3572-1735/works"
+    ],
+    "checkedAt": "2026-11-07",
+    "topics": [
+      "Operations",
+      "LLM"
+    ],
+    "topicKeys": [
+      "operations"
+    ],
+    "shortTitle": "LATuner: An LLM-Enhanced Database Tuning System Based on Adaptive Surrogate Model"
+  },
+  {
+    "id": "garden",
+    "label": "Garden",
+    "title": "Garden: a real-time processing framework for continuous top-k trajectory similarity search",
+    "authors": [
+      "Zhicheng Pan",
+      "Pingfu Chao",
+      "Junhua Fang",
+      "Wei Chen",
+      "Jiajie Xu",
+      "Lei Zhao"
+    ],
+    "year": 2023,
+    "venue": "KAIS",
+    "status": "published",
+    "doi": "10.1007/s10115-023-01880-z",
+    "url": "https://doi.org/10.1007/s10115-023-01880-z",
+    "memberIds": [
+      "zhicheng-pan"
+    ],
+    "sources": [
+      "https://lroethan.github.io/",
+      "https://api.crossref.org/works/10.1007/s10115-023-01880-z",
+      "https://pub.orcid.org/v3.0/0000-0002-3572-1735/works"
+    ],
+    "checkedAt": "2026-11-07",
+    "topics": [
+      "Similarity search"
+    ],
+    "topicKeys": [
+      "vector"
+    ],
+    "shortTitle": "Garden: a real-time processing framework for continuous top-k trajectory similarity search"
+  },
+  {
+    "id": "magicscaler",
+    "label": "MagicScaler",
+    "title": "MagicScaler: Uncertainty-Aware, Predictive Autoscaling",
+    "authors": [
+      "Zhicheng Pan",
+      "Yihang Wang",
+      "Yingying Zhang",
+      "Sean Bin Yang",
+      "Yunyao Cheng",
+      "Peng Chen",
+      "Chenjuan Guo",
+      "Qingsong Wen",
+      "Xiduo Tian",
+      "Yunliang Dou",
+      "Zhiqiang Zhou",
+      "Chengcheng Yang",
+      "Aoying Zhou",
+      "Bin Yang"
+    ],
+    "year": 2023,
+    "venue": "PVLDB",
+    "status": "published",
+    "doi": "10.14778/3611540.3611566",
+    "url": "https://doi.org/10.14778/3611540.3611566",
+    "memberIds": [
+      "chengcheng-yang",
+      "zhicheng-pan"
+    ],
+    "sources": [
+      "https://lroethan.github.io/",
+      "https://ychengc.github.io/",
+      "https://api.crossref.org/works/10.14778/3611540.3611566",
+      "https://pub.orcid.org/v3.0/0000-0002-3572-1735/works"
+    ],
+    "checkedAt": "2026-11-07",
+    "topics": [
+      "Operations",
+      "Autoscaling",
+      "Demand prediction"
+    ],
+    "topicKeys": [
+      "operations"
+    ],
+    "shortTitle": "MagicScaler: Uncertainty-Aware, Predictive Autoscaling"
+  },
+  {
+    "id": "walsm",
+    "label": "WaLSM",
+    "title": "Workload-Aware Log-Structured Merge Key-Value Store for NVM-SSD Hybrid Storage",
+    "authors": [
+      "Lixiang Chen",
+      "Ruihao Chen",
+      "Chengcheng Yang",
+      "Yuxing Han",
+      "Rong Zhang",
+      "Xuan Zhou",
+      "Peiquan Jin",
+      "Weining Qian"
+    ],
+    "year": 2023,
+    "venue": "ICDE",
+    "status": "published",
+    "doi": "10.1109/icde55515.2023.00171",
+    "url": "https://doi.org/10.1109/icde55515.2023.00171",
+    "memberIds": [
+      "chengcheng-yang",
+      "lixiang-chen",
+      "ruihao-chen"
+    ],
+    "sources": [
+      "https://ychengc.github.io/",
+      "https://api.crossref.org/works/10.1109/icde55515.2023.00171",
+      "https://pub.orcid.org/v3.0/0009-0006-3448-3831/works"
+    ],
+    "checkedAt": "2026-11-07",
+    "topics": [
+      "Storage",
+      "Reinforcement learning",
+      "NVM–SSD"
+    ],
+    "topicKeys": [
+      "storage"
+    ],
+    "shortTitle": "Workload-Aware Log-Structured Merge Key-Value Store for NVM-SSD Hybrid Storage"
+  },
+  {
+    "id": "aries",
+    "label": "Aries",
+    "title": "Aries: Accurate Metric-based Representation Learning for Fast Top-k Trajectory Similarity Query",
+    "authors": [
+      "Chunhui Feng",
+      "Zhicheng Pan",
+      "Junhua Fang",
+      "Jiajie Xu",
+      "Pengpeng Zhao",
+      "Lei Zhao"
+    ],
+    "year": 2022,
+    "venue": "CIKM",
+    "status": "published",
+    "doi": "10.1145/3511808.3557239",
+    "url": "https://doi.org/10.1145/3511808.3557239",
+    "memberIds": [
+      "zhicheng-pan"
+    ],
+    "sources": [
+      "https://lroethan.github.io/",
+      "https://api.crossref.org/works/10.1145/3511808.3557239",
+      "https://pub.orcid.org/v3.0/0000-0002-3572-1735/works"
+    ],
+    "checkedAt": "2026-11-07",
+    "topics": [
+      "Similarity search"
+    ],
+    "topicKeys": [
+      "vector"
+    ],
+    "shortTitle": "Aries: Accurate Metric-based Representation Learning for Fast Top-k Trajectory Similarity Query"
+  },
+  {
+    "id": "misty",
+    "label": "Misty",
+    "title": "Misty: Microservice-Based Streaming Trajectory Similarity Search",
+    "authors": [
+      "Jiachun Tao",
+      "Zhicheng Pan",
+      "Junhua Fang",
+      "Pingfu Chao",
+      "Pengpeng Zhao",
+      "Jiajie Xu"
+    ],
+    "year": 2022,
+    "venue": "ICSOC",
+    "status": "published",
+    "doi": "10.1007/978-3-031-20984-0_11",
+    "url": "https://doi.org/10.1007/978-3-031-20984-0_11",
+    "memberIds": [
+      "zhicheng-pan"
+    ],
+    "sources": [
+      "https://lroethan.github.io/",
+      "https://api.crossref.org/works/10.1007/978-3-031-20984-0_11",
+      "https://pub.orcid.org/v3.0/0000-0002-3572-1735/works"
+    ],
+    "checkedAt": "2026-11-07",
+    "topics": [
+      "Similarity search"
+    ],
+    "topicKeys": [
+      "vector"
+    ],
+    "shortTitle": "Misty: Microservice-Based Streaming Trajectory Similarity Search"
+  },
+  {
+    "id": "trasp",
+    "label": "TraSP",
+    "title": "TraSP: A General Framework for Online Trajectory Similarity Processing",
+    "authors": [
+      "Zhicheng Pan",
+      "Pingfu Chao",
+      "Junhua Fang",
+      "Wei Chen",
+      "Zhixu Li",
+      "An Liu"
+    ],
+    "year": 2020,
+    "venue": "WISE",
+    "status": "published",
+    "doi": "10.1007/978-3-030-62005-9_28",
+    "url": "https://doi.org/10.1007/978-3-030-62005-9_28",
+    "memberIds": [
+      "zhicheng-pan"
+    ],
+    "sources": [
+      "https://lroethan.github.io/",
+      "https://api.crossref.org/works/10.1007/978-3-030-62005-9_28",
+      "https://pub.orcid.org/v3.0/0000-0002-3572-1735/works"
+    ],
+    "checkedAt": "2026-11-07",
+    "topics": [
+      "Similarity search"
+    ],
+    "topicKeys": [
+      "vector"
+    ],
+    "shortTitle": "TraSP: A General Framework for Online Trajectory Similarity Processing"
+  }
+]

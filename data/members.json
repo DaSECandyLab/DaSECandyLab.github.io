@@ -1,0 +1,240 @@
+[
+  {
+    "id": "chengcheng-yang",
+    "name": "Chengcheng Yang",
+    "photo": "assets/chengcheng-yang.jpeg",
+    "role": "advisor",
+    "publicationSources": {},
+    "enrollmentYear": null,
+    "graduationYear": null,
+    "degree": null,
+    "yearEvidence": {
+      "status": "not-applicable",
+      "source": "content/authors/Chengcheng Yang/_index.md",
+      "note": "Advisor; the 2017 education year is a USTC degree, not a lab enrollment/graduation year."
+    }
+  },
+  {
+    "id": "guangshun-yang",
+    "name": "Guangshun Yang",
+    "photo": "assets/guangshun-yang.jpeg",
+    "role": "student",
+    "publicationSources": {},
+    "enrollmentYear": 2022,
+    "graduationYear": 2025,
+    "degree": "masters",
+    "yearEvidence": {
+      "status": "inferred",
+      "source": "content/authors/Guangshun Yang/_index.md",
+      "sourceCommit": "3225ba5709f8298bbd56a1e06c6513fd9feedabd",
+      "sourceYear": 2025,
+      "assumedDurationYears": 3,
+      "note": "Treat the legacy ECNU education year as the graduation year (possibly an expected year); infer enrollment using a 3-year master’s program. Both years remain unconfirmed."
+    }
+  },
+  {
+    "id": "hanyu-xu",
+    "name": "Hanyu Xu",
+    "photo": "assets/hanyu-xu.jpeg",
+    "role": "student",
+    "publicationSources": {},
+    "enrollmentYear": 2023,
+    "graduationYear": 2026,
+    "degree": "masters",
+    "yearEvidence": {
+      "status": "inferred",
+      "source": "content/authors/Hanyu Xu/_index.md",
+      "sourceCommit": "3225ba5709f8298bbd56a1e06c6513fd9feedabd",
+      "sourceYear": 2026,
+      "assumedDurationYears": 3,
+      "note": "Treat the legacy ECNU education year as the graduation year (possibly an expected year); infer enrollment using a 3-year master’s program. Both years remain unconfirmed."
+    }
+  },
+  {
+    "id": "haoyu-wang",
+    "name": "Haoyu Wang",
+    "photo": "assets/haoyu-wang.jpeg",
+    "role": "student",
+    "publicationSources": {
+      "orcid": "0009-0006-9407-8651"
+    },
+    "enrollmentYear": 2021,
+    "graduationYear": 2024,
+    "degree": "masters",
+    "yearEvidence": {
+      "status": "inferred",
+      "source": "content/authors/Haoyu Wang/_index.md",
+      "sourceCommit": "3225ba5709f8298bbd56a1e06c6513fd9feedabd",
+      "sourceYear": 2024,
+      "assumedDurationYears": 3,
+      "note": "Treat the legacy ECNU education year as the graduation year (possibly an expected year); infer enrollment using a 3-year master’s program. Both years remain unconfirmed."
+    }
+  },
+  {
+    "id": "jie-yang",
+    "name": "Jie Yang",
+    "photo": "assets/jie-yang.jpeg",
+    "role": "student",
+    "publicationSources": {},
+    "enrollmentYear": 2022,
+    "graduationYear": 2025,
+    "degree": "masters",
+    "yearEvidence": {
+      "status": "inferred",
+      "source": "content/authors/Jie Yang/_index.md",
+      "sourceCommit": "3225ba5709f8298bbd56a1e06c6513fd9feedabd",
+      "sourceYear": 2025,
+      "assumedDurationYears": 3,
+      "note": "Treat the legacy ECNU education year as the graduation year (possibly an expected year); infer enrollment using a 3-year master’s program. Both years remain unconfirmed."
+    }
+  },
+  {
+    "id": "lixiang-chen",
+    "name": "Lixiang Chen",
+    "photo": "assets/lixiang-chen.jpeg",
+    "role": "student",
+    "publicationSources": {
+      "orcid": "0009-0006-3448-3831"
+    },
+    "enrollmentYear": 2022,
+    "graduationYear": 2026,
+    "degree": "phd",
+    "yearEvidence": {
+      "status": "inferred",
+      "source": "content/authors/Lixiang Chen/_index.md",
+      "sourceCommit": "3225ba5709f8298bbd56a1e06c6513fd9feedabd",
+      "sourceYear": 2026,
+      "assumedDurationYears": 4,
+      "note": "Treat the legacy ECNU education year as the graduation year (possibly an expected year); infer enrollment using a 4-year doctoral program. Both years remain unconfirmed."
+    }
+  },
+  {
+    "id": "liyi-ren",
+    "name": "Liyi Ren",
+    "photo": "assets/liyi-ren.jpeg",
+    "role": "student",
+    "publicationSources": {},
+    "enrollmentYear": 2023,
+    "graduationYear": 2026,
+    "degree": "masters",
+    "yearEvidence": {
+      "status": "inferred",
+      "source": "content/authors/Liyi Ren/_index.md",
+      "sourceCommit": "3225ba5709f8298bbd56a1e06c6513fd9feedabd",
+      "sourceYear": 2026,
+      "assumedDurationYears": 3,
+      "note": "Treat the legacy ECNU education year as the graduation year (possibly an expected year); infer enrollment using a 3-year master’s program. Both years remain unconfirmed."
+    }
+  },
+  {
+    "id": "ruihao-chen",
+    "name": "Ruihao Chen",
+    "photo": "assets/ruihao-chen.jpeg",
+    "role": "student",
+    "publicationSources": {},
+    "enrollmentYear": 2021,
+    "graduationYear": 2024,
+    "degree": "masters",
+    "yearEvidence": {
+      "status": "inferred",
+      "source": "content/authors/Ruihao Chen/_index.md",
+      "sourceCommit": "3225ba5709f8298bbd56a1e06c6513fd9feedabd",
+      "sourceYear": 2024,
+      "assumedDurationYears": 3,
+      "note": "Treat the legacy ECNU education year as the graduation year (possibly an expected year); infer enrollment using a 3-year master’s program. Both years remain unconfirmed. The April 2023 profile describes a second-year master’s student, consistent with a 2021 intake."
+    }
+  },
+  {
+    "id": "teng-guo",
+    "name": "Teng Guo",
+    "photo": "assets/teng-guo.jpeg",
+    "role": "student",
+    "publicationSources": {},
+    "enrollmentYear": 2023,
+    "graduationYear": 2026,
+    "degree": "masters",
+    "yearEvidence": {
+      "status": "inferred",
+      "source": "content/authors/Teng Guo/_index.md",
+      "sourceCommit": "3225ba5709f8298bbd56a1e06c6513fd9feedabd",
+      "sourceYear": 2026,
+      "assumedDurationYears": 3,
+      "note": "Treat the legacy ECNU education year as the graduation year (possibly an expected year); infer enrollment using a 3-year master’s program. Both years remain unconfirmed."
+    }
+  },
+  {
+    "id": "wenwen-sun",
+    "name": "Wenwen Sun",
+    "photo": "assets/wenwen-sun.jpeg",
+    "role": "student",
+    "publicationSources": {},
+    "enrollmentYear": 2023,
+    "graduationYear": 2026,
+    "degree": "masters",
+    "yearEvidence": {
+      "status": "inferred",
+      "source": "content/authors/Wenwen Sun/_index.md",
+      "sourceCommit": "3225ba5709f8298bbd56a1e06c6513fd9feedabd",
+      "sourceYear": 2026,
+      "assumedDurationYears": 3,
+      "note": "Treat the legacy ECNU education year as the graduation year (possibly an expected year); infer enrollment using a 3-year master’s program. Both years remain unconfirmed."
+    }
+  },
+  {
+    "id": "xin-xiong",
+    "name": "Xin Xiong",
+    "photo": "assets/xin-xiong.jpeg",
+    "role": "student",
+    "publicationSources": {},
+    "enrollmentYear": 2021,
+    "graduationYear": 2024,
+    "degree": "masters",
+    "yearEvidence": {
+      "status": "inferred",
+      "source": "content/authors/Xin Xiong/_index.md",
+      "sourceCommit": "3225ba5709f8298bbd56a1e06c6513fd9feedabd",
+      "sourceYear": 2024,
+      "assumedDurationYears": 3,
+      "note": "Treat the legacy ECNU education year as the graduation year (possibly an expected year); infer enrollment using a 3-year master’s program. Both years remain unconfirmed."
+    }
+  },
+  {
+    "id": "yu-chen",
+    "name": "Yu Chen",
+    "photo": "assets/yu-chen.jpeg",
+    "role": "student",
+    "publicationSources": {},
+    "enrollmentYear": 2022,
+    "graduationYear": 2025,
+    "degree": "masters",
+    "yearEvidence": {
+      "status": "inferred",
+      "source": "content/authors/Yu Chen/_index.md",
+      "sourceCommit": "3225ba5709f8298bbd56a1e06c6513fd9feedabd",
+      "sourceYear": 2025,
+      "assumedDurationYears": 3,
+      "note": "Treat the legacy ECNU education year as the graduation year (possibly an expected year); infer enrollment using a 3-year master’s program. Both years remain unconfirmed."
+    }
+  },
+  {
+    "id": "zhicheng-pan",
+    "name": "Zhicheng Pan",
+    "photo": "assets/zhicheng-pan.jpeg",
+    "role": "student",
+    "publicationSources": {
+      "orcid": "0000-0002-3572-1735",
+      "homepage": "https://lroethan.github.io/"
+    },
+    "enrollmentYear": 2022,
+    "graduationYear": 2026,
+    "degree": "phd",
+    "yearEvidence": {
+      "status": "inferred",
+      "source": "content/authors/Zhicheng Pan/_index.md",
+      "sourceCommit": "3225ba5709f8298bbd56a1e06c6513fd9feedabd",
+      "sourceYear": 2026,
+      "assumedDurationYears": 4,
+      "note": "Treat the legacy ECNU education year as the graduation year (possibly an expected year); infer enrollment using a 4-year doctoral program. Both years remain unconfirmed. The profile describes a first-year PhD after completing a master’s degree in 2022, supporting a 2022 intake."
+    }
+  }
+]

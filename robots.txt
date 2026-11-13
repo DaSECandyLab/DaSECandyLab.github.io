@@ -1,3 +1,0 @@
-User-agent: *
-
-Sitemap: https://dase955.github.io/sitemap.xml

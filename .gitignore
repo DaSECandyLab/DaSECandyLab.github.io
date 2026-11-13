@@ -1,0 +1,9 @@
+site-dist/
+.member-registry/
+.publication-cache/
+**/__pycache__/
+data/.publication-sync.lock
+data/publication-coverage.json
+data/publication-sync-report.json
+lab-preview/data.js
+.DS_Store

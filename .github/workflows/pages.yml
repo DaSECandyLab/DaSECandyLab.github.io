@@ -1,0 +1,107 @@
+name: Update and publish lab website
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+  schedule:
+    - cron: '15 20 * * *'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: lab-pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: master
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Read the member registry
+        uses: actions/checkout@v4
+        with:
+          repository: DaSECandyLab/Home-Page-Source-Data
+          ref: chordra/member-registry-automation
+          ssh-key: ${{ secrets.MEMBER_REGISTRY_SSH_KEY }}
+          persist-credentials: false
+          path: .member-registry
+          sparse-checkout: |
+            data/members.json
+            lab-preview/assets
+          sparse-checkout-cone-mode: false
+      - uses: actions/cache@v4
+        with:
+          path: .publication-cache
+          key: publications-${{ runner.os }}-${{ github.run_id }}
+          restore-keys: publications-${{ runner.os }}-
+      - name: Check member and publication rules
+        run: |
+          python scripts/test-members.py
+          python scripts/test-publications.py
+          node --test scripts/test-members.cjs
+      - name: Update members and collect publications
+        run: python scripts/sync-publications.py --members-repo .member-registry --allow-source-errors
+      - name: Summarize collection
+        run: |
+          python - <<'PY'
+          import json, os, subprocess
+          from pathlib import Path
+          report = json.loads(Path('data/publication-sync-report.json').read_text())
+          revision = subprocess.check_output(['git', '-C', '.member-registry', 'rev-parse', 'FETCH_HEAD'], text=True).strip()
+          state = {key: report[key] for key in ['checkedAt', 'after', 'issues', 'unboundMembers']}
+          state['memberRevision'] = revision
+          Path('data/sync-state.json').write_text(json.dumps(state, indent=2) + '\n')
+          with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as summary:
+              summary.write('Publications: %s\n\nMember revision: `%s`\n\nSource errors: %s\n' % (report['after'], revision, len(report['issues'])))
+          if report['issues']:
+              print('::warning::Some discovery sources failed. Existing papers were retained; see collection report.')
+          PY
+      - name: Build only public pages and assets
+        run: python scripts/build-production.py --member-assets .member-registry/lab-preview
+      - name: Keep the publication archive for the next run
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/members.json data/publications.json data/sync-state.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Update member and publication data [skip ci]'
+            git push origin HEAD:master
+          fi
+      - name: Save collection diagnostics
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: collection-report
+          path: |
+            data/publication-sync-report.json
+            data/publication-coverage.json
+          retention-days: 30
+          if-no-files-found: ignore
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: site-dist
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4
